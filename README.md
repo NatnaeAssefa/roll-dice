@@ -39,7 +39,7 @@ Displays the result of the dice roll and offers a re-roll option.
 1. Clone the repository:
    ```bash
    git clone https://github.com/NatnaeAssefa/roll-dice.git
-   cd dice-app
+   cd roll-dice
    ```
 
 2. Install dependencies:
