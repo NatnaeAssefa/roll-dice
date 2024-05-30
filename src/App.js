@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Page1 from './pages/Page1';
+import Page2 from './pages/Page2';
+import Page3 from './pages/Page3';
 
 function App() {
+  const [probabilities, setProbabilities] = useState([]);
+  const [rollResult, setRollResult] = useState(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Page1 setProbabilities={setProbabilities} />} />
+        <Route path="/roll" element={<Page2 probabilities={probabilities} setRollResult={setRollResult} />} />
+        <Route path="/result" element={<Page3 rollResult={rollResult} />} />
+      </Routes>
+    </Router>
   );
 }
 

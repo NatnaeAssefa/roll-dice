@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Dice Probability App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This ReactJS application simulates a customizable dice roll experience. Users can choose between even and custom probabilities for the dice faces, roll the dice based on these probabilities, and view the results.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+1. **Even Probability Dice Roll**: Users can select an option to roll a dice with equal probability for each face.
+2. **Custom Probability Dice Roll**: Users can input specific probabilities for each of the six faces of the dice.
+3. **Roll the Dice**: The app rolls the dice according to the selected probabilities.
+4. **View Results**: Users can see the result of their roll and choose to re-roll if desired.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technology Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **ReactJS**: Front-end library for building user interfaces.
+- **React Router**: For navigation between pages.
 
-### `npm test`
+## Components
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. App.js
 
-### `npm run build`
+Manages global state and routing.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Page1.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Allows users to select between even or custom dice probabilities.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. Page2.js
 
-### `npm run eject`
+Handles the dice roll according to the selected probabilities.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 4. Page3.js
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Displays the result of the dice roll and offers a re-roll option.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/NatnaeAssefa/roll-dice.git
+   cd dice-app
+   ```
 
-## Learn More
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Usage
 
-### Code Splitting
+### Page 1: Select Dice Probability
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Even Probability**: Click the "Even Probability" button to use a uniform 1/6 probability for each dice face.
+- **Custom Probability**: Click the "Uneven Probability" button to input custom probabilities. Ensure the total sums to 1.
 
-### Analyzing the Bundle Size
+### Page 2: Roll the Dice
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Click the "Roll" button to roll the dice according to the selected probabilities.
 
-### Making a Progressive Web App
+### Page 3: View Results
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- The result of the dice roll is displayed.
+- Click "Re-roll" to go back to Page 1 and select probabilities again.
 
-### Advanced Configuration
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
 
-### Deployment
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project is licensed under the MIT License.
 
-### `npm run build` fails to minify
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For questions or feedback, please contact [natnaelassefa27@gmail.com](mailto:natnaelassefa27@gmail.com).
